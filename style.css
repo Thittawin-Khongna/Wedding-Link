@@ -1,0 +1,154 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #826653;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    margin-bottom: 5%; /* แปลงจาก 30px */
+}
+
+.Head_Web {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw; /* แปลงจาก 5% */
+    align-items: center;
+    margin-bottom: 3%; /* แปลงจาก 20px */
+    padding: 1vw; /* แปลงจาก 10px */
+}
+
+.name_OM {
+    display: flex; /* ใช้ Flexbox */
+    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    gap: 0.5vw; /* เพิ่มระยะห่างระหว่างข้อความและรูปภาพ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+}
+
+.name_and_PMam {
+    font-size: 2vw; /* แปลงจาก 80% */
+    color: #826653;
+    vertical-align: baseline;
+    display: inline;
+}
+
+.name_POat {
+    font-size: 7vw; /* แปลงจาก 100% */
+    color: #826653; /* สีข้อความ */
+    margin: 0; /* ลบระยะห่างที่ไม่จำเป็น */
+    line-height: 0.5; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+.name_and {
+    font-size: 2vw; /* ขนาดตัวอักษรเล็กกว่า */
+    color: #826653;
+    vertical-align: middle; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    margin-right: 1vw; /* เพิ่มระยะห่างเล็กน้อยระหว่าง "and" และ "Mattana" */
+    display: inline; /* บังคับให้อยู่ในบรรทัดเดียวกัน */
+    line-height: 1; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+.name_PMam {
+    font-size: 7vw; /* ขนาดตัวอักษรปกติ */
+    color: #826653;
+    vertical-align: middle; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    display: inline; /* บังคับให้อยู่ในบรรทัดเดียวกัน */
+    margin-left: 0; /* ลบระยะห่างที่ไม่จำเป็น */
+    line-height: 1; /* ปรับระยะห่างระหว่างบรรทัด */
+}
+
+.image1 {
+    width: 30vw; /* แปลงจาก 40% */
+    margin-right: 2.5vw; /* แปลงจาก 5% */
+    border-radius: 1vw; /* แปลงจาก 2% */
+    box-shadow: #826653 0vw 0vw 2vw; /* เพิ่มเงาให้กับภาพ */
+}
+
+.image2 {
+    width: 20vw; /* แปลงจาก 40% */
+}
+
+section {
+    margin-bottom: 1vw; /* แปลงจาก 2% */
+}
+
+.location a, .photos a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5vw; /* แปลงจาก 1% */
+    text-decoration: none;
+    border-radius: 0.25vw; /* แปลงจาก 0.5% */
+}
+
+.chat {
+    text-align: left;
+}
+
+#messages {
+    height: 10vw; /* แปลงจาก 20% */
+    overflow-y: scroll;
+    border: 0.05vw solid #ccc; /* แปลงจาก 0.1% */
+    padding: 0.5vw; /* แปลงจาก 1% */
+    margin-bottom: 0.5vw; /* แปลงจาก 1% */
+}
+
+#messageInput {
+    width: 95vw; /* คงไว้เป็น 95% */
+    padding: 0.5vw; /* แปลงจาก 1% */
+    margin-bottom: 0.5vw; /* แปลงจาก 1% */
+}
+
+#sendButton {
+    background-color: #008CBA;
+    color: white;
+    padding: 0.5vw; /* แปลงจาก 1% */
+    border: none;
+    border-radius: 0.25vw; /* แปลงจาก 0.5% */
+    cursor: pointer;
+}
+
+.countdown {
+    margin-bottom: 1.5vw; /* แปลงจาก 3% */
+    clear: both; /* เพิ่ม clear: both; */
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+}
+
+.time-block {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.time-block span {
+    font-size: 2vw; /* แปลงจาก 2em */
+    font-weight: bold;
+}
+
+.colon {
+    font-size: 2vw; /* แปลงจาก 2em */
+    margin: 0 0.25vw; /* แปลงจาก 0.5% */
+}
+
+.section-box {
+    border: 0.05vw solid #ccc; /* แปลงจาก 0.1% */
+    border-radius: 0.5vw; /* แปลงจาก 1% */
+    padding: 1vw; /* แปลงจาก 2% */
+    margin-bottom: 1vw; /* แปลงจาก 2% */
+    background-color: #f9f9f9;
+}
