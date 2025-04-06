@@ -2,15 +2,48 @@ body {
     font-family: sans-serif;
     text-align: center;
     background-color: #826653;
+    margin: 0; /* ลบ margin เริ่มต้น */
+    padding: 0; /* ลบ padding เริ่มต้น */
+    width: 100vw; /* เต็มความกว้างของหน้าจอ */
+    height: 100vh; /* เต็มความสูงของหน้าจอ */
+    line-height: 0;
+}
+
+.First_impression{
+    margin: 0; /* ลบ margin เริ่มต้น */
+    padding: 0; /* ลบ padding เริ่มต้น */
+    display: block;
+    position: relative;
+    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+}
+
+#countdown {
+    position: absolute;
+    top: 50%; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    left: 50%; /* จัดให้อยู่ตรงกลางแนวนอน */
+    transform: translate(-50%, -50%); /* ปรับตำแหน่งให้อยู่ตรงกลาง */
+    color: white; /* เปลี่ยนสีข้อความให้อ่านง่าย */
+    font-size: 2vw; /* ปรับขนาดข้อความ */
+    text-align: center;
+}
+
+#countdown .time-block {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#countdown .colon {
+    font-size: 3vw;
+    margin: 0 0.1vw;
+    margin-bottom: 4vw;
 }
 
 .container {
-    width: 80%;
-    margin: 50px auto;
+    margin: 0; /* ลบ margin เริ่มต้น */
+    padding: 0; /* ลบ padding เริ่มต้น */
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative
 }
 
 header {
@@ -33,6 +66,7 @@ header {
     align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
     gap: 0.5vw; /* เพิ่มระยะห่างระหว่างข้อความและรูปภาพ */
     margin: 0 auto; /* จัดให้อยู่ตรงกลางในแนวนอน */
+    margin-top: 5vw; /* เพิ่มระยะห่างด้านบน */
 }
 
 .name_and_PMam {
@@ -69,9 +103,10 @@ header {
 
 .image1 {
     width: 30vw; /* แปลงจาก 40% */
-    margin-right: 2.5vw; /* แปลงจาก 5% */
+    margin-right: 5vw; /* แปลงจาก 5% */
     border-radius: 1vw; /* แปลงจาก 2% */
     box-shadow: #826653 0vw 0vw 2vw; /* เพิ่มเงาให้กับภาพ */
+    margin-top: 5vw;
 }
 
 .image2 {
@@ -118,9 +153,40 @@ section {
     cursor: pointer;
 }
 
+.MARRIAGE{
+    margin: 0; /* ลบ margin เริ่มต้น */
+    padding: 0; /* ลบ padding เริ่มต้น */
+    display: block;
+    position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-size: 5vw; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    font-weight: bold; /* หนักขึ้น */
+    color: #ffffff; /* สีข้อความ */
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    z-index: 10;
+    margin-bottom: 30vw;
+}
+
+.OCCURRING{
+    margin: 0; /* ลบ margin เริ่มต้น */
+    padding: 0; /* ลบ padding เริ่มต้น */
+    display: block;
+    position: absolute;
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2vw; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    font-weight: bold; /* หนักขึ้น */
+    color: #ffffff; /* สีข้อความ */
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    z-index: 10;
+    margin-bottom: 22vw;
+}
+
 .countdown {
     margin-bottom: 1.5vw; /* แปลงจาก 3% */
     clear: both; /* เพิ่ม clear: both; */
+    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+    justify-content: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวนอน */
 }
 
 #countdown {
@@ -128,6 +194,7 @@ section {
     justify-content: center;
     align-items: center;
     font-family: monospace;
+    margin-top: 15vw;
 }
 
 .time-block {
@@ -136,13 +203,21 @@ section {
 }
 
 .time-block span {
-    font-size: 2vw; /* แปลงจาก 2em */
+    font-size: 6vw; /* แปลงจาก 2em */
     font-weight: bold;
+    font-family: "Dancing Script", cursive; /* เปลี่ยนฟอนต์เป็น Dancing Script */
+    color: white;
+    border: 0.2vw solid white; /* กรอบรอบตัวเลข */
+    border-radius: 1vw; /* มุมโค้งของกรอบ */
+    padding: 2vw; /* ระยะห่างภายในกรอบ */
+    width: 10vw; /* ความกว้างของกรอบ */
+    text-align: center;
 }
 
-.colon {
-    font-size: 2vw; /* แปลงจาก 2em */
-    margin: 0 0.25vw; /* แปลงจาก 0.5% */
+.time-block p {
+    margin-top: 2vw; /* ระยะห่างระหว่างตัวเลขกับข้อความ */
+    font-size: 1.5vw; /* ขนาดข้อความ */
+    color: white;
 }
 
 .section-box {
@@ -151,4 +226,45 @@ section {
     padding: 1vw; /* แปลงจาก 2% */
     margin-bottom: 1vw; /* แปลงจาก 2% */
     background-color: #f9f9f9;
+}
+
+
+
+@media (max-width: 768px) {
+    .Head_Web {
+        flex-direction: row; /* เปลี่ยนจากแนวนอนเป็นแนวตั้ง */
+        align-items: center;
+    }
+
+    .name_OM {
+        margin-top: 5vw; /* เพิ่มระยะห่างด้านบน */
+        order: 1;
+    }
+
+    .image1 {
+        order: 2;
+        width: 35vw; /* ปรับขนาดรูปภาพให้พอดีกับมือถือ */
+        margin: 0; /* ลบ margin ที่อาจทำให้ภาพเบี้ยว */
+        margin-right: 8vw;
+        margin-top: 3vw; /* เพิ่มระยะห่างด้านบน */
+    }
+
+    .image2 {
+        margin-bottom: 5vw;
+        width: 20vw; /* ขยายรูปแหวนให้ใหญ่ขึ้นในมือถือ */
+    }
+
+    .name_POat,
+    .name_PMam {
+        font-size: 8vw; /* ปรับขนาดตัวอักษรให้ใหญ่ขึ้นในมือถือ */
+        margin-top: 5vw;
+    }
+
+    .name_and {
+        font-size: 5vw;
+    }
+
+    .name_and_Pmam {
+        font-size: 5vw;
+    }
 }
