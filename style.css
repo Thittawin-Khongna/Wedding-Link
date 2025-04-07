@@ -270,7 +270,7 @@ section {
         display: grid;
         grid-template-columns: repeat(2, auto); /* 2 คอลัมน์ */
         position: absolute;
-        top: 50%; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+        top: 100vw; /* จัดให้อยู่ตรงกลางแนวตั้ง */
         left: 50%; /* จัดให้อยู่ตรงกลางแนวนอน */
         font-size: 2vw; /* ปรับขนาดข้อความ */
         text-align: center;
@@ -281,7 +281,7 @@ section {
         align-items: center;
         font-family: monospace;
         margin-top: 30vw;
-        gap: 10vw;
+        gap: 5vw;
     }
     
     
