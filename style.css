@@ -9,13 +9,22 @@ body {
     line-height: 0;
 }
 
-.First_impression{
-    margin: 0; /* ลบ margin เริ่มต้น */
-    padding: 0; /* ลบ padding เริ่มต้น */
-    display: block;
+.First_impression {
+    height: 100vh;
     position: relative;
-    flex-direction: column; /* จัดให้อยู่ในคอลัมน์เดียวกัน */
+    overflow: hidden;
 }
+
+.image_First {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
 
 #countdown {
     position: absolute;
@@ -32,11 +41,11 @@ body {
     margin: 0 10px;
 }
 
-#countdown .colon {
+/* #countdown .colon {
     font-size: 3vw;
     margin: 0 0.1vw;
     margin-bottom: 4vw;
-}
+} */
 
 .container {
     margin: 0; /* ลบ margin เริ่มต้น */
@@ -107,6 +116,14 @@ header {
     border-radius: 1vw; /* แปลงจาก 2% */
     box-shadow: #826653 0vw 0vw 2vw; /* เพิ่มเงาให้กับภาพ */
     margin-top: 5vw;
+
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .image2 {
@@ -195,11 +212,12 @@ section {
     align-items: center;
     font-family: monospace;
     margin-top: 15vw;
+    gap: 5vw;
 }
 
 .time-block {
     text-align: center;
-    margin: 0 10px;
+    margin: 0 2vw;
 }
 
 .time-block span {
@@ -208,14 +226,14 @@ section {
     font-family: "Dancing Script", cursive; /* เปลี่ยนฟอนต์เป็น Dancing Script */
     color: white;
     border: 0.2vw solid white; /* กรอบรอบตัวเลข */
-    border-radius: 1vw; /* มุมโค้งของกรอบ */
+    border-radius: 1.5vw; /* มุมโค้งของกรอบ */
     padding: 2vw; /* ระยะห่างภายในกรอบ */
     width: 10vw; /* ความกว้างของกรอบ */
     text-align: center;
 }
 
 .time-block p {
-    margin-top: 2vw; /* ระยะห่างระหว่างตัวเลขกับข้อความ */
+    margin-top: 3vw; /* ระยะห่างระหว่างตัวเลขกับข้อความ */
     font-size: 1.5vw; /* ขนาดข้อความ */
     color: white;
 }
